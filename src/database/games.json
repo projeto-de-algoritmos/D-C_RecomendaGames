@@ -1,0 +1,172 @@
+{
+    "games":[
+        {
+            "id": 1,
+            "name": "Call of Duty: Modern Warfare III",
+            "image": "https://image.api.playstation.com/vulcan/ap/rnd/202308/1623/ba00d855b4f9061f4f7c294506753f58bf33ac28453a8de4.png?w=230&thumb=false",
+            "genre": "FPS"
+        },
+        {
+            "id": 2,
+            "name": "Battlefield 2042",
+            "image": "https://image.api.playstation.com/vulcan/ap/rnd/202106/0117/I558OkMNBieAq24dzWwjjE4K.png?w=230&thumb=false",
+            "genre": "FPS"
+        },
+        {
+            "id": 3,
+            "name": "Tom Clancy's Rainbow Six Siege",
+            "image": "https://image.api.playstation.com/vulcan/ap/rnd/202209/0617/eiXonwxcJH00bkGo3G6lUm9t.png?w=230&thumb=false",
+            "genre": "FPS"
+        },
+        {
+            "id": 4,
+            "name": "Apex Legends",
+            "image": "https://image.api.playstation.com/vulcan/ap/rnd/202311/0210/c90ae3021e37894ca75cc137b4deb6359c19acd3fd68b196.png?w=230&thumb=false",
+            "genre": "FPS"
+        },
+        {
+            "id": 5,
+            "name": "Destiny 2",
+            "image": "https://image.api.playstation.com/vulcan/ap/rnd/202308/2219/64322d74ba6eb75766053b79d7d076f4dfe6d655b2d984b7.png?w=230&thumb=false",
+            "genre": "FPS"
+        },
+        {
+            "id": 6,
+            "name": "Borderlands 3",
+            "image": "https://image.api.playstation.com/gs2-sec/appkgo/prod/CUSA08025_00/2/i_282052c0284d44dfc8a1c011fde114ea1a280f9f387f1be3bd204a65b5be322e/i/icon0.png?w=230&thumb=false",
+            "genre": "FPS"
+        },
+        {
+            "id": 7,
+            "name": "DOOM Eternal",
+            "image": "https://image.api.playstation.com/vulcan/ap/rnd/202010/0114/ERNPc4gFqeRDG1tYQIfOKQtM.png?w=230&thumb=false",
+            "genre": "FPS"
+        },
+        {
+            "id": 8,
+            "name": "God of War Ragnarök",
+            "image": "https://image.api.playstation.com/vulcan/ap/rnd/202109/2821/KkIiB8w4CBvZspu6zyzOza3p.png?w=230&thumb=false",
+            "genre": "Ação/Aventura"
+        },
+        {
+            "id": 9,
+            "name": "Red Dead Redemption 2",
+            "image": "https://image.api.playstation.com/gs2-sec/appkgo/prod/CUSA08519_00/12/i_3da1cf7c41dc7652f9b639e1680d96436773658668c7dc3930c441291095713b/i/icon0.png?w=230&thumb=false",
+            "genre": "Ação/Aventura"
+        },
+        {
+            "id": 10,
+            "name": "Marvel's Spider-Man 2",
+            "image": "https://image.api.playstation.com/vulcan/ap/rnd/202306/1219/1c7b75d8ed9271516546560d219ad0b22ee0a263b4537bd8.png?w=230&thumb=false",
+            "genre": "Ação/Aventura"
+        },
+        {
+            "id": 11,
+            "name": "Ghost of Tsushima",
+            "image": "https://image.api.playstation.com/vulcan/ap/rnd/202010/0222/niMUubpU9y1PxNvYmDfb8QFD.png?w=230&thumb=false",
+            "genre": "Ação/Aventura"
+        },
+        {
+            "id": 12,
+            "name": "The Last of Us: Part II",
+            "image": "https://image.api.playstation.com/vulcan/img/rnd/202010/2618/w48z6bzefZPrRcJHc7L8SO66.png?w=230&thumb=false",
+            "genre": "Ação/Aventura"
+        },
+        {
+            "id": 13,
+            "name": "Assassin's Creed Mirage",
+            "image": "https://image.api.playstation.com/vulcan/ap/rnd/202208/1718/phwiQjbJddEg979YucUoP3Vr.png?w=230&thumb=false",
+            "genre": "Ação/Aventura"
+        },
+        {
+            "id": 14,
+            "name": "Horizon Forbidden West",
+            "image": "https://image.api.playstation.com/vulcan/ap/rnd/202010/2915/kifM3lnke5lExwRd96mIDojQ.png?w=230&thumb=false",
+            "genre": "Ação/Aventura"
+        },
+        {
+            "id": 15,
+            "name": "Cyberpunk 2077",
+            "image": "https://image.api.playstation.com/vulcan/ap/rnd/202202/1517/UyPJCxbE3EoeLtUxjoFBnsD4.png?w=230&thumb=false",
+            "genre": "RPG"
+        },
+        {
+            "id": 16,
+            "name": "Baldur's Gate 3",
+            "image": "https://image.api.playstation.com/vulcan/ap/rnd/202302/2321/ba706e54d68d10a0eb6ab7c36cdad9178c58b7fb7bb03d28.png?w=230&thumb=false",
+            "genre": "RPG"
+        },
+        {
+            "id": 17,
+            "name": "The Witcher 3: Wild Hunt",
+            "image": "https://image.api.playstation.com/vulcan/ap/rnd/202211/1412/5YlA3POEEpaAJsUq3eg6U8d6.png?w=230&thumb=false",
+            "genre": "RPG"
+        },
+        {
+            "id": 18,
+            "name": "Elden Ring",
+            "image": "https://image.api.playstation.com/vulcan/ap/rnd/202107/0902/fS3Hhaq06TqLrbjMVplA8MaY.png?w=230&thumb=false",
+            "genre": "RPG"
+        },
+        {
+            "id": 19,
+            "name": "Bloodborne",
+            "image": "https://image.api.playstation.com/vulcan/img/rnd/202011/0713/WSZqsrnejjt85wYmUqeBQvMQ.png?w=230&thumb=false",
+            "genre": "RPG"
+        },
+        {
+            "id": 20,
+            "name": "Persona 5",
+            "image": "https://image.api.playstation.com/vulcan/img/cfn/11307XlqDFlHmHWGjBPndSappCDTnE9OmnP2P-dSzcvLX9i0pvH_okJOl6dP1AnZefxthD-2k3RrsdzYU_BqUy9K5_sv-Tnx.png?w=440&thumb=false",
+            "genre": "RPG"
+        },
+        {
+            "id": 21,
+            "name": "Final Fantasy XVI",
+            "image": "https://image.api.playstation.com/vulcan/ap/rnd/202211/3007/lgFVhRm5BfoX02pRUt3lSmLV.png?w=230&thumb=false",
+            "genre": "RPG"
+        },
+        {
+            "id": 22,
+            "name": "Gran Turismo 7",
+            "image": "https://image.api.playstation.com/vulcan/ap/rnd/202109/1321/yZ7dpmjtHr1olhutHT57IFRh.png?w=230&thumb=false",
+            "genre": "Corrida"
+        },
+        {
+            "id": 23,
+            "name": "The Crew Motorfest",
+            "image": "https://image.api.playstation.com/vulcan/ap/rnd/202305/2315/607d9ed1ac762c9de33ef73fd09b3431d0b96ef4985ac2fb.png?w=230&thumb=false",
+            "genre": "Corrida"
+        },
+        {
+            "id": 24,
+            "name": "Need For Speed Unbound",
+            "image": "https://image.api.playstation.com/vulcan/ap/rnd/202209/0913/3CmlwTUjrvYOei0WDNdBsYPp.png?w=230&thumb=false",
+            "genre": "Corrida"
+        },
+        {
+            "id": 25,
+            "name": "F1 23",
+            "image": "https://image.api.playstation.com/vulcan/ap/rnd/202311/0614/554b18c451f0b9715395094b7b514701efa68462600ee252.png?w=230&thumb=false",
+            "genre": "Corrida"
+        },
+        {
+            "id": 26,
+            "name": "Assetto Corsa Competizione",
+            "image": "https://image.api.playstation.com/vulcan/ap/rnd/202006/0821/BslGKgFzwgNgHGD1YiXr5kOf.png?w=230&thumb=false",
+            "genre": "Corrida"
+        },
+        {
+            "id": 27,
+            "name": "Hot Wheels Unleashed 2 - Turbocharged",
+            "image": "https://image.api.playstation.com/vulcan/ap/rnd/202305/1610/a63668c38fbe4c31f62d77a2863300dcf26c3e50576d75e2.png?w=230&thumb=false",
+            "genre": "Corrida"
+        },
+        {
+            "id": 28,
+            "name": "Dirt 5",
+            "image": "https://image.api.playstation.com/vulcan/img/rnd/202007/2111/AU9y67cQ8s4t6S0Tg2peRQ5s.png?w=230&thumb=false",
+            "genre": "Corrida"
+        }
+    ]
+}
