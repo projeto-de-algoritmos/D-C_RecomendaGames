@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Game from "./components/Game/Game";
+import "./styleApp.css";
 
 function App() {
   const [gameList, setGameList] = useState([]);
@@ -28,10 +29,9 @@ function App() {
   const listItems = gameList.map((game) => {
     return (
       <li key={game.id}>
-        <Game name={game.name} image={game.image} genre={game.genre} />
-        <button type="button" onClick={() => handleAddGame(game)}>
-          +
-        </button>
+        <div className="gameContainer" onClick={() => handleAddGame(game)}>
+          <Game name={game.name} image={game.image} genre={game.genre} />
+        </div>
       </li>
     );
   });
@@ -42,7 +42,9 @@ function App() {
 
   return (
     <>
-      <h1>RecomendaGames</h1>
+      <header>
+        <h1>RecomendaGames</h1>
+      </header>
       <p>Seus jogos favoritos:</p>
       <p>
         {myGames.map((game, index) => (

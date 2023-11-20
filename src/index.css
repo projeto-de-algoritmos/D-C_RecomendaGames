@@ -1,0 +1,10 @@
+* {
+    font-family: 'Pixelify Sans', sans-serif;
+    color: #fff;
+}
+
+body {
+    margin: 0;
+    background: rgb(14,3,38);
+    /* background: linear-gradient(159deg, rgba(14,3,38,1) 0%, rgba(24,6,64,1) 35%, rgba(52,11,140,1) 100%); */
+}

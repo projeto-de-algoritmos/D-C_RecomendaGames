@@ -1,0 +1,46 @@
+li {
+  list-style: none;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+  background: rgb(52, 11, 140);
+  background: linear-gradient(
+    180deg,
+    rgba(52, 11, 140, 1) 0%,
+    rgba(14, 3, 38, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 150px;
+}
+
+.gameContainer {
+  background: rgb(68, 11, 191);
+  background: linear-gradient(
+    159deg,
+    rgba(68, 11, 191, 1) 0%,
+    rgba(52, 11, 140, 1) 25%,
+    rgba(24, 6, 64, 1) 75%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  width: 20vw;
+  opacity: 0.6;
+  transition: 0.6s;
+}
+
+.gameContainer:hover {
+  opacity: 1;
+  transition: 0.6s;
+}
