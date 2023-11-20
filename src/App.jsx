@@ -1,35 +1,63 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState, useEffect } from "react";
+import Game from "./components/Game/Game";
+import "./styleApp.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [gameList, setGameList] = useState([]);
+  const [myGames, setMyGames] = useState([]);
+
+  const fetchData = async () => {
+    await fetch("./games.json")
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        setGameList(data.games);
+      });
+  };
+
+  const handleAddGame = (game) => {
+    let myGamesList = [...myGames];
+    myGamesList.push({
+      id: game.id,
+      name: game.name,
+      genre: game.genre,
+    });
+    setMyGames(myGamesList);
+  };
+
+  const listItems = gameList.map((game) => {
+    return (
+      <li key={game.id}>
+        <div className="gameContainer" onClick={() => handleAddGame(game)}>
+          <Game name={game.name} image={game.image} genre={game.genre} />
+        </div>
+      </li>
+    );
+  });
+
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+      <header>
+        <h1>RecomendaGames</h1>
+      </header>
+      <p>Seus jogos favoritos:</p>
+      <p>
+        {myGames.map((game, index) => (
+          <div key={index}>
+            <p>ID: {game.id}</p>
+            <p>Name: {game.name}</p>
+            <p>Genre: {game.genre}</p>
+          </div>
+        ))}
       </p>
+      <ul>{listItems}</ul>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
