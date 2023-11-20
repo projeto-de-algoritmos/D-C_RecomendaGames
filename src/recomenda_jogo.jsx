@@ -5,11 +5,14 @@ function RecomendaJogos() {
   const [orderedPreferences, setOrderedPreferences] = useState([]);
   
   const [yourPreferences, setYourPreferences] = useState([
-    { title: "Spider Man 2", genre: "Ação/Aventura", preference: 3 },
+    { title: "Spider Man 2", genre: "Ação/Aventura", preference: 1 },
     { title: "DOOM Eternal", genre: "FPS", preference: 2 },
-    { title: "God Of War Ragnarok", genre: "Ação/Aventura", preference: 4 },
-    { title: "Elden Ring", genre: "RPG", preference: 5 },
-    { title: "F1 2023", genre: "Corrida", preference: 1 },
+    { title: "God Of War Ragnarok", genre: "Ação/Aventura", preference: 3 },
+    { title: "Elden Ring", genre: "RPG", preference: 4 },
+    { title: "F1 2023", genre: "Corrida", preference: 5 },
+    { title: "Final Fantasy VII Remake", genre: "RPG", preference: 6 },
+    { title: "The Witcher 3", genre: "RPG", preference: 7 },
+    { title: "GTA V", genre: "Ação/Aventura", preference: 8 },
   ]);
 
   const generateOrderedPreferences = () => {
