@@ -14,7 +14,7 @@ function countAndSortInversions(arr) {
   return {
     sortedArray: mergeResult.sortedArray,
     inversions: leftResult.inversions + rightResult.inversions + mergeResult.inversions,
-    samePreferenceElements: mergeResult.samePreferenceElements,
+    sameidElements: mergeResult.sameidElements,
   };
 }
 
@@ -23,15 +23,15 @@ function mergeAndCountSplitInversions(left, right, arr) {
   let j = 0;
   let inversions = 0;
   const merged = [];
-  const samePreferenceElements = [];
+  const sameidElements = [];
 
   while (i < left.length && j < right.length) {
-    if (left[i].preference <= right[j].preference) {
+    if (left[i].id <= right[j].id) {
       merged.push(left[i]);
 
       // Verifica se o elemento manteve sua posição
-      if (left[i].preference === arr[merged.length - 1].preference) {
-        samePreferenceElements.push(left[i]);
+      if (left[i].id === arr[merged.length - 1].id) {
+        sameidElements.push(left[i]);
       }
 
       i++;
@@ -41,8 +41,8 @@ function mergeAndCountSplitInversions(left, right, arr) {
       merged.push(right[j]);
 
       // Verifica se o elemento manteve sua posição
-      if (right[j].preference === arr[merged.length - 1].preference) {
-        samePreferenceElements.push(right[j]);
+      if (right[j].id === arr[merged.length - 1].id) {
+        sameidElements.push(right[j]);
       }
 
       j++;
@@ -52,8 +52,8 @@ function mergeAndCountSplitInversions(left, right, arr) {
   while (i < left.length) {
     merged.push(left[i]);
 
-    if (left[i].preference === arr[merged.length - 1].preference) {
-      samePreferenceElements.push(left[i]);
+    if (left[i].id === arr[merged.length - 1].id) {
+      sameidElements.push(left[i]);
     }
     i++;
 
@@ -62,8 +62,8 @@ function mergeAndCountSplitInversions(left, right, arr) {
   while (j < right.length) {
     merged.push(right[j]);
 
-  if (right[j].preference === arr[merged.length - 1].preference) {
-    samePreferenceElements.push(right[j]);
+  if (right[j].id === arr[merged.length - 1].id) {
+    sameidElements.push(right[j]);
   }
   j++;
 
@@ -73,7 +73,7 @@ function mergeAndCountSplitInversions(left, right, arr) {
   return {
     sortedArray: merged.concat(left.slice(i)).concat(right.slice(j)),
     inversions,
-    samePreferenceElements,
+    sameidElements,
   };
 }
 
@@ -82,24 +82,27 @@ export default countAndSortInversions;
 // Exemplo de aplicação
 
 const games = [
-  // { title: "Spider Man 2", genre: "Ação/Aventura", preference: 3 },
-  // { title: "DOOM Eternal", genre: "FPS", preference: 2 },
-  // { title: "God Of War Ragnarok", genre: "Ação/Aventura", preference: 4 },
-  // { title: "Elden Ring", genre: "RPG", preference: 1 },
-  // { title: "F1 2023", genre: "Corrida", preference: 5 },
-  // { title: "Final Fantasy VII Remake", genre: "RPG", preference: 6 },
+  // { game: "Spider Man 2", genre: "Ação/Aventura", id: 3 },
+  // { game: "DOOM Eternal", genre: "FPS", id: 2 },
+  // { game: "God Of War Ragnarok", genre: "Ação/Aventura", id: 4 },
+  // { game: "Elden Ring", genre: "RPG", id: 1 },
+  // { game: "F1 2023", genre: "Corrida", id: 5 },
 
-  { title: "Spider Man 2", genre: "Ação/Aventura", preference: 1 },
-  { title: "DOOM Eternal", genre: "FPS", preference: 2 },
-  { title: "God Of War Ragnarok", genre: "Ação/Aventura", preference: 3 },
-  { title: "Elden Ring", genre: "RPG", preference: 4 },
-  { title: "F1 2023", genre: "Corrida", preference: 5 },
-  { title: "Final Fantasy VII Remake", genre: "RPG", preference: 6 },
-  { title: "The Witcher 3", genre: "RPG", preference: 7 },
-  { title: "GTA V", genre: "Ação/Aventura", preference: 8 },
+  // { game: "Spider Man 2", genre: "Ação/Aventura", id: 1 },
+  // { game: "DOOM Eternal", genre: "FPS", id: 14 },
+  // { game: "God Of War Ragnarok", genre: "Ação/Aventura", id: 18 },
+  // { game: "Elden Ring", genre: "RPG", id: 26 },
+  // { game: "F1 2023", genre: "Corrida", id: 25 },
+
+  { game: "Spider Man 2", genre: "Ação/Aventura", id: 8 },
+  { game: "DOOM Eternal", genre: "FPS", id: 6 },
+  { game: "God Of War Ragnarok", genre: "Ação/Aventura", id: 18 },
+  { game: "Elden Ring", genre: "RPG", id: 26 },
+  { game: "F1 2023", genre: "Corrida", id: 25 },
+
 ];
 
 const result = countAndSortInversions(games);
 console.log('Número de inversões:', result.inversions);
 console.log('Array ordenado:', result.sortedArray);
-console.log('Elementos que não mudaram de preferência:', result.samePreferenceElements);
+console.log('Elementos que não mudaram de preferência:', result.sameidElements);

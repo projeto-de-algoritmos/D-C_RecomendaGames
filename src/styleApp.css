@@ -4,7 +4,9 @@ li {
 
 ul {
   display: flex;
+  padding-right: 20px;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 header {
@@ -35,7 +37,7 @@ header {
   border-radius: 20px;
   padding: 10px;
   margin: 10px;
-  width: 20vw;
+  width: 19vw;
   opacity: 0.6;
   transition: 0.6s;
 }
@@ -43,4 +45,32 @@ header {
 .gameContainer:hover {
   opacity: 1;
   transition: 0.6s;
+}
+
+.botao {
+  background-color: rgb(68, 11, 191);
+  color: white;
+
+}
+
+.myGames {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.favoritegame {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(68, 11, 191);
+  padding: 1px;
+  border-radius: 20px;
+  width: 60vw;
+  margin-bottom: 5px;
+  transition: 0.6s;
+}
+
+.favoritegame:hover {
+  transition: 0.6s;
+  background-color: #F03E3E;
 }

@@ -2,7 +2,7 @@
     "games":[
         {
             "id": 1,
-            "name": "Call of Duty: Modern Warfare III",
+            "name": "Call of Duty MWIII",
             "image": "https://image.api.playstation.com/vulcan/ap/rnd/202308/1623/ba00d855b4f9061f4f7c294506753f58bf33ac28453a8de4.png?w=230&thumb=false",
             "genre": "FPS"
         },
@@ -14,7 +14,7 @@
         },
         {
             "id": 3,
-            "name": "Tom Clancy's Rainbow Six Siege",
+            "name": "Rainbow Six Siege",
             "image": "https://image.api.playstation.com/vulcan/ap/rnd/202209/0617/eiXonwxcJH00bkGo3G6lUm9t.png?w=230&thumb=false",
             "genre": "FPS"
         },
