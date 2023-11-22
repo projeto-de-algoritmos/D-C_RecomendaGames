@@ -12,6 +12,8 @@
 ## Sobre 
 O recomenda jogos é uma aplicação que utiliza do algoritmo de contagem de inversões para que possa recomendar jogos que venham a ser de interesse do gosto do usuário e do gênero desses jogos. Para isso, ele recomenda que o usuário insira até 5 jogos de sua preferência, sendo que o primeiro jogo é aquele que o usuário mais gosta e o quinto jogo é o quinto que ele mais gosta. A partir disso, o algoritmo retorna 3 jogos que são recomendados para o usuário.
 
+O vídeo de apresentação pode ser encontrado no seguinte [link](./video/entrega_dividir-e-conquistar.mp4)
+
 ## Screenshots
 <center>
 
