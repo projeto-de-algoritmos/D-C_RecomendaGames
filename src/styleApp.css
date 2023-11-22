@@ -50,7 +50,10 @@ header {
 .botao {
   background-color: rgb(68, 11, 191);
   color: white;
-
+  border-radius: 20px;
+  border: none;
+  width: 20vw;
+  height: 8vh;
 }
 
 .myGames {
